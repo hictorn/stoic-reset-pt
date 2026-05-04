@@ -34,7 +34,8 @@ body::after { content: ''; position: fixed; inset: 0; background-image: url("dat
 @media (max-width: 768px) {
   .h1-br-redor { display: none; }
   .h1-redor::before { content: ' '; }
-}
+  }
+  .br-mobile { display: none; }
 .lead { font-size: clamp(1rem, 2.2vw, 1.18rem); color: var(--muted); line-height: 1.8; font-weight: 300; max-width: 680px; }
 .lead.center { margin: 0 auto; text-align: center; }
 .btn-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 32px; }
@@ -128,6 +129,7 @@ details.faq-item[open] summary.faq-q::after { transform: rotate(45deg); color: #
   summary.faq-q::after { font-size: 1.35rem; }
   .faq-a { font-size: 14px !important; line-height: 1.75 !important; padding-bottom: 14px; }
   .footer { padding: 26px 18px; }
+  .br-mobile { display: inline; }
 }
 @media (max-width: 400px) {
   .wrap, .wrap-wide { padding: 0 16px; max-width: 100%; }
@@ -224,7 +226,7 @@ html, body { overflow-x: hidden; }
     </div>
     <div class="wrap reveal" id="offer">
       <div class="product-box">
-        <h2 class="h2 serif">Pare de entregar sua<br><span style="-webkit-text-fill-color:#C1FF72;color:#C1FF72;font-style:italic;">paz de graça.</span></h2>
+        <h2 class="h2 serif">Pare de entregar sua<span class="br-mobile"><br></span> <span style="-webkit-text-fill-color:#C1FF72;color:#C1FF72;font-style:italic;">paz de graça.</span></h2>
         <p class="lead center">Se você está cansado de pensar demais, de reagir em excesso e de voltar emocionalmente ao que continua te machucando,<br>este ebook foi feito para você.</p>
         <p style="text-align:center; margin-top:16px; font-size:0.85rem; color:var(--soft); font-style:italic;">Ebook digital · Acesso imediato após a compra.</p>
         <p style="text-align:center; margin-top:24px; margin-bottom:24px; line-height:1;"><span class="price">R$&nbsp;29,97</span></p>
